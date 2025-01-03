@@ -2,7 +2,7 @@
 ![Wizard's Graph](https://github-readme-activity-graph.vercel.app/graph?username=PS-Wizard&theme=react-dark)
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=PS-Wizard&show_icons=true&theme=radical)<br/>
 ![Visitor Count](https://komarev.com/ghpvc/?username=PS-Wizard&color=blue)<br/>
-[![GitHub Streak](https://streak-stats.demolab.com/?user=denvercoder1&currStreakNum=2FD3EB&fire=pink&sideLabels=F00&date_format=[Y.]n.j)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=denvercoder1&currStreakNum=2FD3EB&fire=pink&sideLabels=F00&date_format=[Y.]n.j&background=0d1117)](https://git.io/streak-stats)
 
 
 <!--
