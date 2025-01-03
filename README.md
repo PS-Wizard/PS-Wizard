@@ -5,7 +5,7 @@
     <a href="https://git.io/streak-stats">
     <img src="https://streak-stats.demolab.com?user=PS-Wizard&theme=transparent&hide_border=true&short_numbers=true" alt="GitHub Streak">
     </a>
-    <h1>Languages I Have Worked With:</h1>
+    <h1>I Have Worked With:</h1>
     <!-- Python -->
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50" alt="Python">
     <!-- Go -->
@@ -34,6 +34,12 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="50" alt="Bash">
     <!-- Lua -->
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" width="50" alt="Lua">
+    <!-- MySQL -->
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="50" alt="MySQL">
+    <!-- PostgreSQL -->
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="50" alt="PostgreSQL">
+    <!-- SQLite -->
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="50" alt="SQLite">
     <h1>My Dev Setup:</h1>
     <!-- Tmux -->
     <img src="https://www.cdnlogo.com/logos/t/93/tmux.svg" width="50" alt="Tmux">
