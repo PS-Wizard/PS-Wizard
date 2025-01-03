@@ -1,7 +1,8 @@
 ## Hi there 👋
-![Snake](https://github.com/PS-Wizard/PS-Wizard/blob/output/github-contribution-grid-snake.svg)
 ![Wizard's Graph](https://github-readme-activity-graph.vercel.app/graph?username=PS-Wizard&theme=react-dark)
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=PS-Wizard&show_icons=true&theme=radical)
+![Visitor Count](https://komarev.com/ghpvc/?username=PS-Wizard&color=blue)
+[!GitHub Streak](https://streak-stats.demolab.com/?user=PS-Wizard&currStreakNum=2FD3EB&fire=pink&sideLabels=F00&date_format=[Y.]n.j)
 
 
 <!--
