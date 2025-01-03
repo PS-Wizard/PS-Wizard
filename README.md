@@ -13,7 +13,7 @@
     <!-- HTML -->
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50" alt="HTML">
     <!-- HTMX -->
-    <img src="https://www.drupal.org/files/project-images/htmx_logo.1.png" width="50" alt="HTMX">
+    <img src="https://www.drupal.org/files/project-images/htmx_logo.1.png" width="100" alt="HTMX">
     <!-- CSS -->
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="50" alt="CSS">
     <!-- JavaScript -->
