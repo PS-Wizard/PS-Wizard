@@ -12,14 +12,20 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="50" alt="Go">
     <!-- HTML -->
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50" alt="HTML">
+    <!-- HTMX -->
+    <img src="https://www.drupal.org/files/project-images/htmx_logo.1.png" width="50" alt="HTMX">
     <!-- CSS -->
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="50" alt="CSS">
-    <!-- Java -->
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="50" alt="Java">
     <!-- JavaScript -->
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50" alt="JavaScript">
+    <!-- Solid.js -->
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidjs/solidjs-original.svg" width="50" alt="Solid.js">
+    <!-- Svelte.js -->
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg" width="50" alt="Svelte.js">
     <!-- React -->
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="50" alt="React">
+    <!-- Java -->
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="50" alt="Java">
     <!-- C -->
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="50" alt="C">
     <!-- C++ -->
