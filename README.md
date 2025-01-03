@@ -30,7 +30,7 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" width="50" alt="Lua">
     <h1>My Dev Setup:</h1>
     <!-- Tmux -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Tmux_logo.svg/608px-Tmux_logo.svg.png" width="50" alt="Tmux">
+    <img src="https://www.cdnlogo.com/logos/t/93/tmux.svg" width="50" alt="Tmux">
     <!-- Arch Linux -->
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="50" alt="Arch Linux">
     <!-- Neovim -->
