@@ -1,5 +1,8 @@
 ## Hi there 👋
-[![Wizard's Graph](https://github-readme-activity-graph.vercel.app/graph?username=PS-Wizard&theme=react-dark)]
+![Wizard's Graph](https://github-readme-activity-graph.vercel.app/graph?username=PS-Wizard&theme=react-dark)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=PS-Wizard&show_icons=true&theme=radical)
+
+
 <!--
 Here are some ideas to get you started:
 
