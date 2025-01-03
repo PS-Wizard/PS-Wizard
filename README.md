@@ -41,5 +41,6 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="50" alt="Arch Linux">
     <!-- Neovim -->
     <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Neovim-mark.svg" width="50" alt="Neovim">
-    <img src="https://codeberg.org/attachments/d9a98f9a-56a5-46ee-b5da-65f7bd74ee6c" width="50" alt="Foot Terminal">
+    <img src="https://codeberg.org/attachments/d9a98f9a-56a5-46ee-b5da-65f7bd74ee6c" width="50" alt="Foot Terminal"><br/>
+    ... and yes my github really goes back all the way back to 1980
 </div>
