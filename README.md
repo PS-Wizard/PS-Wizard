@@ -2,13 +2,14 @@
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=PS-Wizard&theme=react-dark" alt="Wizard's Graph">
   <br/>
-  <img src="https://github-readme-stats.vercel.app/api?username=PS-Wizard&show_icons=true&theme=radical" alt="GitHub Stats">
-  <br/>
-  <img src="https://komarev.com/ghpvc/?username=PS-Wizard&color=blue" alt="Visitor Count">
-  <br/>
   <a href="https://git.io/streak-stats">
     <img src="https://streak-stats.demolab.com?user=PS-Wizard&theme=transparent&hide_border=true&short_numbers=true" alt="GitHub Streak">
   </a>
+  <h2>Languages I Use 🚀</h2>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50" alt="Python" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50" alt="JavaScript" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="50" alt="Java" />
+
 </div>
 
 
