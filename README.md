@@ -3,7 +3,7 @@
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=PS-Wizard&theme=react-dark" alt="Wizard's Graph">
     <br/>
     <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com?user=PS-Wizard&theme=transparent&hide_border=true&short_numbers=true" alt="GitHub Streak">
+    <img src="https://nirzak-streak-stats.vercel.app?user=PS-Wizard" alt="GitHub Streak">
     </a>
     <h1>I Have Worked With:</h1>
     <!-- Python -->
