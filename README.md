@@ -1,6 +1,5 @@
 <div align="center">
 
-## Hi there 👋
 
 <img src="./github-contrib-animated.svg" width="750" alt="contribution graph" />
 
@@ -9,6 +8,6 @@
 </a>
 
 <br/>
-... and yes my github really goes back all the way back to 1980
+yes, i reviewed linus's first PR in 1980 — check how far my graph goes
 
 </div>
