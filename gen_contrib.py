@@ -4,7 +4,7 @@ import json, os, sys, urllib.request, datetime
 
 USER = os.environ.get("GH_USER", "PS-Wizard")
 TOKEN = os.environ.get("GITHUB_TOKEN", "") or os.environ.get("GH_TOKEN", "")
-OUT = os.path.join(os.path.dirname(__file__), "github-contrib-animated.svg")
+OUT = os.path.join(os.path.dirname(__file__), "svg", "github-contrib-animated.svg")
 
 Q = 'query($u:String!){user(login:$u){contributionsCollection{contributionCalendar{totalContributions weeks{contributionDays{date contributionCount}}}}}}'
 
@@ -29,11 +29,12 @@ def level(c):
     if c <= 12: return 3
     return 4
 
+os.makedirs(os.path.join(os.path.dirname(__file__), "svg"), exist_ok=True)
 cal = fetch()
 weeks, total = cal["weeks"], cal["totalContributions"]
 fills = ['#161b22','#0e4429','#006d32','#26a641','#39d353']
-GX, GY, CELL, GAP, STEP = 45, 62, 10, 3, 13
-W, H = 750, 200
+GX, GY, CELL, GAP, STEP = 45, 40, 10, 3, 13
+W, H = 750, 152
 
 months, prev = [], None
 for wi, w in enumerate(weeks):
@@ -48,28 +49,20 @@ p.append('<title>GitHub contribution graph</title>')
 p.append('''<style>
 *{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
 .bg{fill:#0d1117;stroke:#30363d;stroke-width:1}
-.h-title{fill:#e6edf3;font-size:14px;font-weight:600;opacity:0;animation:fadeDown .7s ease forwards;animation-delay:50ms}
-.h-user{fill:#7d8590;font-size:12px;opacity:0;animation:fadeDown .7s ease forwards;animation-delay:150ms}
 .m{fill:#7d8590;font-size:10px;opacity:0;animation:fadeIn .6s ease forwards}
 .d{fill:#7d8590;font-size:9px;opacity:0;animation:fadeIn .6s ease forwards}
 .cell{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .45s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:var(--d)}
 .hot{animation:pop .45s cubic-bezier(.34,1.56,.64,1) forwards,hotPulse 2.6s ease-in-out infinite;animation-delay:var(--d),calc(var(--d) + 700ms)}
-.legend{opacity:0;animation:fadeUp .6s ease forwards;animation-delay:3400ms}
-.legend-t{fill:#7d8590;font-size:10px}
 .sweep{opacity:0;animation:sweep 7s ease-in-out infinite;animation-delay:4s}
 @keyframes pop{0%{opacity:0;transform:scale(0)}60%{opacity:1;transform:scale(1.35)}100%{opacity:1;transform:scale(1)}}
 @keyframes hotPulse{0%,100%{opacity:1;transform:scale(1);filter:brightness(1)}50%{opacity:1;transform:scale(1.18);filter:brightness(1.45) drop-shadow(0 0 3px rgba(57,211,83,.8))}}
 @keyframes fadeIn{to{opacity:1}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeDown{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
 @keyframes sweep{0%{opacity:0;transform:translateX(-260px) skewX(-18deg)}8%{opacity:.16}22%{opacity:.16;transform:translateX(860px) skewX(-18deg)}23%,100%{opacity:0;transform:translateX(860px) skewX(-18deg)}}
-@media (prefers-reduced-motion:reduce){.cell,.hot,.sweep,.legend,.h-title,.h-user,.m,.d{animation-duration:.01ms;animation-delay:0ms;animation-iteration-count:1}}
+@media (prefers-reduced-motion:reduce){.cell,.hot,.sweep,.m,.d{animation-duration:.01ms;animation-delay:0ms;animation-iteration-count:1}}
 </style>''')
 p.append(f'<rect class="bg" x="1" y="1" width="{W-2}" height="{H-2}" rx="6"/>')
-p.append(f'<text class="h-title" x="16" y="30">{total} contributions in the last year</text>')
-p.append(f'<text class="h-user" x="{W-16}" y="30" text-anchor="end">@{USER}</text>')
 for wi, name in months:
-    p.append(f'<text class="m" x="{GX+wi*STEP}" y="52" style="animation-delay:{300+wi*28}ms">{name}</text>')
+    p.append(f'<text class="m" x="{GX+wi*STEP}" y="28" style="animation-delay:{300+wi*28}ms">{name}</text>')
 for row, name in {1:'Mon',3:'Wed',5:'Fri'}.items():
     p.append(f'<text class="d" x="12" y="{GY+row*STEP+CELL-1}" style="animation-delay:{300+row*60}ms">{name}</text>')
 gw, gh = len(weeks)*STEP, 7*STEP
@@ -81,14 +74,33 @@ for wi, w in enumerate(weeks):
         p.append(f'<rect class="{cls}" x="{GX+wi*STEP}" y="{GY+di*STEP}" width="{CELL}" height="{CELL}" rx="2" fill="{fills[lv]}" style="--d:{(wi*7+di)*9}ms"><title>{day["date"]}: {day["contributionCount"]}</title></rect>')
 p.append(f'<g clip-path="url(#gridClip)"><rect class="sweep" x="{GX-120}" y="{GY-20}" width="90" height="{gh+40}" fill="url(#shine)"/></g>')
 p.append('<linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>')
-lx, ly = GX+gw-150, GY+gh+22
-p.append(f'<g class="legend"><text class="legend-t" x="{lx}" y="{ly+8}">Less</text>')
-for i, f in enumerate(fills):
-    p.append(f'<rect x="{lx+32+i*13}" y="{ly}" width="10" height="10" rx="2" fill="{f}"/>')
-p.append(f'<text class="legend-t" x="{lx+32+5*13+4}" y="{ly+8}">More</text></g>')
 p.append('</svg>')
 open(OUT, "w").write("\n".join(p))
 print(f"wrote {OUT} total={total}")
+
+# --- header line outside graph: count + muted bracket tagline ---
+import base64 as _b64
+_fd = os.path.dirname(__file__)
+_greg = _b64.b64encode(open(os.path.join(_fd, 'fonts', 'geist-reg.woff2'), 'rb').read()).decode()
+_gmed = _b64.b64encode(open(os.path.join(_fd, 'fonts', 'geist-med.woff2'), 'rb').read()).decode()
+_words = ['yes,', 'i', 'reviewed', "linus's", 'first', 'PR', 'in', '1980']
+_spans = '<tspan class="hm hw" dx="10" style="--d:350ms">(</tspan>' + ''.join(f'<tspan class="hm hw" dx="5" style="--d:{480+i*130}ms">{w}</tspan>' for i, w in enumerate(_words)) + '<tspan class="hm hw" dx="5" style="--d:1650ms">)</tspan>'
+_h = []
+_h.append('<svg xmlns="http://www.w3.org/2000/svg" width="750" height="40" viewBox="0 0 750 40" role="img">')
+_h.append(''.join([
+  '<style>@font-face{font-family:Geist;src:url(data:font/woff2;base64,', _greg, ') format("woff2");font-weight:400}',
+  '@font-face{font-family:Geist;src:url(data:font/woff2;base64,', _gmed, ') format("woff2");font-weight:500}',
+  '*{font-family:Geist,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}',
+  '.hc{fill:#e6edf3;font-size:15px;font-weight:600;opacity:0;animation:hIn .6s ease forwards;animation-delay:50ms}',
+  '.hm{fill:#7d8590;font-size:13px}',
+  '.hw{opacity:0;animation:wIn .5s ease forwards;animation-delay:var(--d)}',
+  '@keyframes hIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1}}',
+  '@keyframes wIn{from{opacity:0;transform:translateY(4px);filter:blur(2px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}',
+  '@media (prefers-reduced-motion:reduce){.hc,.hw{animation-duration:.01ms;animation-delay:0ms}}</style>']))
+_h.append(f'<text x="4" y="25"><tspan class="hc">{total} contributions this year</tspan>{_spans}</text>')
+_h.append('</svg>')
+open(os.path.join(_fd, "svg", "graph-header.svg"), 'w').write(chr(10).join(_h))
+print('wrote graph-header.svg')
 
 # --- streak card, same style ---
 days = sorted([d for w in weeks for d in w['contributionDays']], key=lambda x: x['date'])
@@ -101,7 +113,7 @@ longest = run = 0
 for d in days:
     run = run + 1 if d['contributionCount'] > 0 else 0
     longest = max(longest, run)
-OUT2 = os.path.join(os.path.dirname(__file__), 'github-streak-animated.svg')
+OUT2 = os.path.join(os.path.dirname(__file__), "svg", "github-streak-animated.svg")
 s = []
 s.append('<svg xmlns="http://www.w3.org/2000/svg" width="750" height="132" viewBox="0 0 750 132" role="img">')
 s.append('<title>streak</title>')
