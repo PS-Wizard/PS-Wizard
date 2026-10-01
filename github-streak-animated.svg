@@ -4,7 +4,7 @@
 <rect class="bg" x="1" y="1" width="748" height="130" rx="6"/>
 <text x="60" y="34" fill="#7d8590" font-size="12">@PS-Wizard — streak</text>
 <text x="690" y="36" text-anchor="end" font-size="20" class="fire">🔥</text>
-<g class="stat" style="animation-delay:100ms"><text class="num" x="60" y="88">1387</text><text class="lab" x="60" y="108">TOTAL CONTRIBUTIONS</text></g>
+<g class="stat" style="animation-delay:100ms"><text class="num" x="60" y="88">1388</text><text class="lab" x="60" y="108">TOTAL CONTRIBUTIONS</text></g>
 <rect x="60" y="114" width="150" height="4" rx="2" fill="#21262d"/><rect class="bar" x="60" y="114" width="138" height="4" rx="2" fill="#39d353" style="animation-delay:500ms"/>
 <g class="stat" style="animation-delay:300ms"><text class="num" x="300" y="88">4</text><text class="lab" x="300" y="108">CURRENT STREAK — DAYS</text></g>
 <rect x="300" y="114" width="150" height="4" rx="2" fill="#21262d"/><rect class="bar" x="300" y="114" width="20" height="4" rx="2" fill="#f0883e" style="animation-delay:700ms"/>
