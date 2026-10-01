@@ -1,0 +1,420 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="200" viewBox="0 0 750 200" role="img">
+<title>GitHub contribution graph</title>
+<style>
+*{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.bg{fill:#0d1117;stroke:#30363d;stroke-width:1}
+.h-title{fill:#e6edf3;font-size:14px;font-weight:600;opacity:0;animation:fadeDown .7s ease forwards;animation-delay:50ms}
+.h-user{fill:#7d8590;font-size:12px;opacity:0;animation:fadeDown .7s ease forwards;animation-delay:150ms}
+.m{fill:#7d8590;font-size:10px;opacity:0;animation:fadeIn .6s ease forwards}
+.d{fill:#7d8590;font-size:9px;opacity:0;animation:fadeIn .6s ease forwards}
+.cell{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .45s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:var(--d)}
+.hot{animation:pop .45s cubic-bezier(.34,1.56,.64,1) forwards,hotPulse 2.6s ease-in-out infinite;animation-delay:var(--d),calc(var(--d) + 700ms)}
+.legend{opacity:0;animation:fadeUp .6s ease forwards;animation-delay:3400ms}
+.legend-t{fill:#7d8590;font-size:10px}
+.sweep{opacity:0;animation:sweep 7s ease-in-out infinite;animation-delay:4s}
+@keyframes pop{0%{opacity:0;transform:scale(0)}60%{opacity:1;transform:scale(1.35)}100%{opacity:1;transform:scale(1)}}
+@keyframes hotPulse{0%,100%{opacity:1;transform:scale(1);filter:brightness(1)}50%{opacity:1;transform:scale(1.18);filter:brightness(1.45) drop-shadow(0 0 3px rgba(57,211,83,.8))}}
+@keyframes fadeIn{to{opacity:1}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+@keyframes sweep{0%{opacity:0;transform:translateX(-260px) skewX(-18deg)}8%{opacity:.16}22%{opacity:.16;transform:translateX(860px) skewX(-18deg)}23%,100%{opacity:0;transform:translateX(860px) skewX(-18deg)}}
+@media (prefers-reduced-motion:reduce){.cell,.hot,.sweep,.legend,.h-title,.h-user,.m,.d{animation-duration:.01ms;animation-delay:0ms;animation-iteration-count:1}}
+</style>
+<rect class="bg" x="1" y="1" width="748" height="198" rx="6"/>
+<text class="h-title" x="16" y="30">1384 contributions in the last year</text>
+<text class="h-user" x="734" y="30" text-anchor="end">@PS-Wizard</text>
+<text class="m" x="58" y="52" style="animation-delay:328ms">Oct</text>
+<text class="m" x="110" y="52" style="animation-delay:440ms">Nov</text>
+<text class="m" x="175" y="52" style="animation-delay:580ms">Dec</text>
+<text class="m" x="227" y="52" style="animation-delay:692ms">Jan</text>
+<text class="m" x="279" y="52" style="animation-delay:804ms">Feb</text>
+<text class="m" x="331" y="52" style="animation-delay:916ms">Mar</text>
+<text class="m" x="396" y="52" style="animation-delay:1056ms">Apr</text>
+<text class="m" x="448" y="52" style="animation-delay:1168ms">May</text>
+<text class="m" x="513" y="52" style="animation-delay:1308ms">Jun</text>
+<text class="m" x="565" y="52" style="animation-delay:1420ms">Jul</text>
+<text class="m" x="617" y="52" style="animation-delay:1532ms">Aug</text>
+<text class="m" x="682" y="52" style="animation-delay:1672ms">Sep</text>
+<text class="d" x="12" y="84" style="animation-delay:360ms">Mon</text>
+<text class="d" x="12" y="110" style="animation-delay:480ms">Wed</text>
+<text class="d" x="12" y="136" style="animation-delay:600ms">Fri</text>
+<clipPath id="gridClip"><rect x="45" y="62" width="689" height="91" rx="3"/></clipPath>
+<rect class="cell" x="45" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:0ms"><title>2025-09-28: 2</title></rect>
+<rect class="cell" x="45" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:9ms"><title>2025-09-29: 4</title></rect>
+<rect class="cell" x="45" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:18ms"><title>2025-09-30: 1</title></rect>
+<rect class="cell" x="45" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:27ms"><title>2025-10-01: 4</title></rect>
+<rect class="cell" x="45" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:36ms"><title>2025-10-02: 2</title></rect>
+<rect class="cell" x="45" y="127" width="10" height="10" rx="2" fill="#006d32" style="--d:45ms"><title>2025-10-03: 5</title></rect>
+<rect class="cell" x="45" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:54ms"><title>2025-10-04: 1</title></rect>
+<rect class="cell" x="58" y="62" width="10" height="10" rx="2" fill="#006d32" style="--d:63ms"><title>2025-10-05: 5</title></rect>
+<rect class="cell" x="58" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:72ms"><title>2025-10-06: 4</title></rect>
+<rect class="cell" x="58" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:81ms"><title>2025-10-07: 2</title></rect>
+<rect class="cell" x="58" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:90ms"><title>2025-10-08: 4</title></rect>
+<rect class="cell" x="58" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:99ms"><title>2025-10-09: 3</title></rect>
+<rect class="cell" x="58" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:108ms"><title>2025-10-10: 3</title></rect>
+<rect class="cell" x="58" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:117ms"><title>2025-10-11: 3</title></rect>
+<rect class="cell" x="71" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:126ms"><title>2025-10-12: 1</title></rect>
+<rect class="cell" x="71" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:135ms"><title>2025-10-13: 3</title></rect>
+<rect class="cell" x="71" y="88" width="10" height="10" rx="2" fill="#161b22" style="--d:144ms"><title>2025-10-14: 0</title></rect>
+<rect class="cell" x="71" y="101" width="10" height="10" rx="2" fill="#161b22" style="--d:153ms"><title>2025-10-15: 0</title></rect>
+<rect class="cell" x="71" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:162ms"><title>2025-10-16: 1</title></rect>
+<rect class="cell" x="71" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:171ms"><title>2025-10-17: 2</title></rect>
+<rect class="cell" x="71" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:180ms"><title>2025-10-18: 1</title></rect>
+<rect class="cell" x="84" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:189ms"><title>2025-10-19: 3</title></rect>
+<rect class="cell" x="84" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:198ms"><title>2025-10-20: 3</title></rect>
+<rect class="cell" x="84" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:207ms"><title>2025-10-21: 3</title></rect>
+<rect class="cell" x="84" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:216ms"><title>2025-10-22: 4</title></rect>
+<rect class="cell" x="84" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:225ms"><title>2025-10-23: 2</title></rect>
+<rect class="cell" x="84" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:234ms"><title>2025-10-24: 3</title></rect>
+<rect class="cell" x="84" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:243ms"><title>2025-10-25: 2</title></rect>
+<rect class="cell" x="97" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:252ms"><title>2025-10-26: 2</title></rect>
+<rect class="cell" x="97" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:261ms"><title>2025-10-27: 4</title></rect>
+<rect class="cell" x="97" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:270ms"><title>2025-10-28: 3</title></rect>
+<rect class="cell" x="97" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:279ms"><title>2025-10-29: 4</title></rect>
+<rect class="cell" x="97" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:288ms"><title>2025-10-30: 1</title></rect>
+<rect class="cell" x="97" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:297ms"><title>2025-10-31: 3</title></rect>
+<rect class="cell" x="97" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:306ms"><title>2025-11-01: 1</title></rect>
+<rect class="cell" x="110" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:315ms"><title>2025-11-02: 1</title></rect>
+<rect class="cell" x="110" y="75" width="10" height="10" rx="2" fill="#26a641" style="--d:324ms"><title>2025-11-03: 10</title></rect>
+<rect class="cell" x="110" y="88" width="10" height="10" rx="2" fill="#006d32" style="--d:333ms"><title>2025-11-04: 5</title></rect>
+<rect class="cell" x="110" y="101" width="10" height="10" rx="2" fill="#006d32" style="--d:342ms"><title>2025-11-05: 5</title></rect>
+<rect class="cell" x="110" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:351ms"><title>2025-11-06: 1</title></rect>
+<rect class="cell" x="110" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:360ms"><title>2025-11-07: 2</title></rect>
+<rect class="cell" x="110" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:369ms"><title>2025-11-08: 4</title></rect>
+<rect class="cell" x="123" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:378ms"><title>2025-11-09: 1</title></rect>
+<rect class="cell" x="123" y="75" width="10" height="10" rx="2" fill="#26a641" style="--d:387ms"><title>2025-11-10: 9</title></rect>
+<rect class="cell" x="123" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:396ms"><title>2025-11-11: 1</title></rect>
+<rect class="cell" x="123" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:405ms"><title>2025-11-12: 2</title></rect>
+<rect class="cell" x="123" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:414ms"><title>2025-11-13: 7</title></rect>
+<rect class="cell" x="123" y="127" width="10" height="10" rx="2" fill="#006d32" style="--d:423ms"><title>2025-11-14: 5</title></rect>
+<rect class="cell" x="123" y="140" width="10" height="10" rx="2" fill="#006d32" style="--d:432ms"><title>2025-11-15: 7</title></rect>
+<rect class="cell" x="136" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:441ms"><title>2025-11-16: 0</title></rect>
+<rect class="cell" x="136" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:450ms"><title>2025-11-17: 1</title></rect>
+<rect class="cell" x="136" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:459ms"><title>2025-11-18: 1</title></rect>
+<rect class="cell" x="136" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:468ms"><title>2025-11-19: 2</title></rect>
+<rect class="cell" x="136" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:477ms"><title>2025-11-20: 4</title></rect>
+<rect class="cell" x="136" y="127" width="10" height="10" rx="2" fill="#006d32" style="--d:486ms"><title>2025-11-21: 5</title></rect>
+<rect class="cell" x="136" y="140" width="10" height="10" rx="2" fill="#161b22" style="--d:495ms"><title>2025-11-22: 0</title></rect>
+<rect class="cell" x="149" y="62" width="10" height="10" rx="2" fill="#006d32" style="--d:504ms"><title>2025-11-23: 8</title></rect>
+<rect class="cell" x="149" y="75" width="10" height="10" rx="2" fill="#006d32" style="--d:513ms"><title>2025-11-24: 5</title></rect>
+<rect class="cell" x="149" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:522ms"><title>2025-11-25: 1</title></rect>
+<rect class="cell" x="149" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:531ms"><title>2025-11-26: 3</title></rect>
+<rect class="cell" x="149" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:540ms"><title>2025-11-27: 1</title></rect>
+<rect class="cell" x="149" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:549ms"><title>2025-11-28: 2</title></rect>
+<rect class="cell" x="149" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:558ms"><title>2025-11-29: 1</title></rect>
+<rect class="cell" x="162" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:567ms"><title>2025-11-30: 0</title></rect>
+<rect class="cell" x="162" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:576ms"><title>2025-12-01: 1</title></rect>
+<rect class="cell" x="162" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:585ms"><title>2025-12-02: 1</title></rect>
+<rect class="cell" x="162" y="101" width="10" height="10" rx="2" fill="#161b22" style="--d:594ms"><title>2025-12-03: 0</title></rect>
+<rect class="cell" x="162" y="114" width="10" height="10" rx="2" fill="#161b22" style="--d:603ms"><title>2025-12-04: 0</title></rect>
+<rect class="cell" x="162" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:612ms"><title>2025-12-05: 1</title></rect>
+<rect class="cell" x="162" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:621ms"><title>2025-12-06: 3</title></rect>
+<rect class="cell" x="175" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:630ms"><title>2025-12-07: 0</title></rect>
+<rect class="cell" x="175" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:639ms"><title>2025-12-08: 1</title></rect>
+<rect class="cell" x="175" y="88" width="10" height="10" rx="2" fill="#161b22" style="--d:648ms"><title>2025-12-09: 0</title></rect>
+<rect class="cell" x="175" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:657ms"><title>2025-12-10: 1</title></rect>
+<rect class="cell" x="175" y="114" width="10" height="10" rx="2" fill="#161b22" style="--d:666ms"><title>2025-12-11: 0</title></rect>
+<rect class="cell" x="175" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:675ms"><title>2025-12-12: 1</title></rect>
+<rect class="cell" x="175" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:684ms"><title>2025-12-13: 1</title></rect>
+<rect class="cell" x="188" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:693ms"><title>2025-12-14: 1</title></rect>
+<rect class="cell" x="188" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:702ms"><title>2025-12-15: 2</title></rect>
+<rect class="cell" x="188" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:711ms"><title>2025-12-16: 1</title></rect>
+<rect class="cell" x="188" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:720ms"><title>2025-12-17: 2</title></rect>
+<rect class="cell" x="188" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:729ms"><title>2025-12-18: 1</title></rect>
+<rect class="cell" x="188" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:738ms"><title>2025-12-19: 4</title></rect>
+<rect class="cell" x="188" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:747ms"><title>2025-12-20: 4</title></rect>
+<rect class="cell" x="201" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:756ms"><title>2025-12-21: 0</title></rect>
+<rect class="cell" x="201" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:765ms"><title>2025-12-22: 1</title></rect>
+<rect class="cell" x="201" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:774ms"><title>2025-12-23: 1</title></rect>
+<rect class="cell" x="201" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:783ms"><title>2025-12-24: 3</title></rect>
+<rect class="cell" x="201" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:792ms"><title>2025-12-25: 1</title></rect>
+<rect class="cell" x="201" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:801ms"><title>2025-12-26: 1</title></rect>
+<rect class="cell" x="201" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:810ms"><title>2025-12-27: 1</title></rect>
+<rect class="cell" x="214" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:819ms"><title>2025-12-28: 2</title></rect>
+<rect class="cell" x="214" y="75" width="10" height="10" rx="2" fill="#161b22" style="--d:828ms"><title>2025-12-29: 0</title></rect>
+<rect class="cell" x="214" y="88" width="10" height="10" rx="2" fill="#161b22" style="--d:837ms"><title>2025-12-30: 0</title></rect>
+<rect class="cell" x="214" y="101" width="10" height="10" rx="2" fill="#161b22" style="--d:846ms"><title>2025-12-31: 0</title></rect>
+<rect class="cell" x="214" y="114" width="10" height="10" rx="2" fill="#161b22" style="--d:855ms"><title>2026-01-01: 0</title></rect>
+<rect class="cell" x="214" y="127" width="10" height="10" rx="2" fill="#161b22" style="--d:864ms"><title>2026-01-02: 0</title></rect>
+<rect class="cell" x="214" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:873ms"><title>2026-01-03: 2</title></rect>
+<rect class="cell" x="227" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:882ms"><title>2026-01-04: 0</title></rect>
+<rect class="cell" x="227" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:891ms"><title>2026-01-05: 1</title></rect>
+<rect class="cell" x="227" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:900ms"><title>2026-01-06: 1</title></rect>
+<rect class="cell" x="227" y="101" width="10" height="10" rx="2" fill="#161b22" style="--d:909ms"><title>2026-01-07: 0</title></rect>
+<rect class="cell" x="227" y="114" width="10" height="10" rx="2" fill="#161b22" style="--d:918ms"><title>2026-01-08: 0</title></rect>
+<rect class="cell" x="227" y="127" width="10" height="10" rx="2" fill="#161b22" style="--d:927ms"><title>2026-01-09: 0</title></rect>
+<rect class="cell" x="227" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:936ms"><title>2026-01-10: 1</title></rect>
+<rect class="cell" x="240" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:945ms"><title>2026-01-11: 0</title></rect>
+<rect class="cell" x="240" y="75" width="10" height="10" rx="2" fill="#161b22" style="--d:954ms"><title>2026-01-12: 0</title></rect>
+<rect class="cell" x="240" y="88" width="10" height="10" rx="2" fill="#161b22" style="--d:963ms"><title>2026-01-13: 0</title></rect>
+<rect class="cell" x="240" y="101" width="10" height="10" rx="2" fill="#161b22" style="--d:972ms"><title>2026-01-14: 0</title></rect>
+<rect class="cell" x="240" y="114" width="10" height="10" rx="2" fill="#161b22" style="--d:981ms"><title>2026-01-15: 0</title></rect>
+<rect class="cell" x="240" y="127" width="10" height="10" rx="2" fill="#161b22" style="--d:990ms"><title>2026-01-16: 0</title></rect>
+<rect class="cell" x="240" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:999ms"><title>2026-01-17: 3</title></rect>
+<rect class="cell" x="253" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:1008ms"><title>2026-01-18: 2</title></rect>
+<rect class="cell" x="253" y="75" width="10" height="10" rx="2" fill="#161b22" style="--d:1017ms"><title>2026-01-19: 0</title></rect>
+<rect class="cell" x="253" y="88" width="10" height="10" rx="2" fill="#26a641" style="--d:1026ms"><title>2026-01-20: 11</title></rect>
+<rect class="cell" x="253" y="101" width="10" height="10" rx="2" fill="#161b22" style="--d:1035ms"><title>2026-01-21: 0</title></rect>
+<rect class="cell" x="253" y="114" width="10" height="10" rx="2" fill="#161b22" style="--d:1044ms"><title>2026-01-22: 0</title></rect>
+<rect class="cell" x="253" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:1053ms"><title>2026-01-23: 1</title></rect>
+<rect class="cell" x="253" y="140" width="10" height="10" rx="2" fill="#161b22" style="--d:1062ms"><title>2026-01-24: 0</title></rect>
+<rect class="cell" x="266" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:1071ms"><title>2026-01-25: 0</title></rect>
+<rect class="cell" x="266" y="75" width="10" height="10" rx="2" fill="#161b22" style="--d:1080ms"><title>2026-01-26: 0</title></rect>
+<rect class="cell" x="266" y="88" width="10" height="10" rx="2" fill="#161b22" style="--d:1089ms"><title>2026-01-27: 0</title></rect>
+<rect class="cell" x="266" y="101" width="10" height="10" rx="2" fill="#161b22" style="--d:1098ms"><title>2026-01-28: 0</title></rect>
+<rect class="cell" x="266" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:1107ms"><title>2026-01-29: 8</title></rect>
+<rect class="cell" x="266" y="127" width="10" height="10" rx="2" fill="#006d32" style="--d:1116ms"><title>2026-01-30: 8</title></rect>
+<rect class="cell hot" x="266" y="140" width="10" height="10" rx="2" fill="#39d353" style="--d:1125ms"><title>2026-01-31: 20</title></rect>
+<rect class="cell" x="279" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:1134ms"><title>2026-02-01: 0</title></rect>
+<rect class="cell hot" x="279" y="75" width="10" height="10" rx="2" fill="#39d353" style="--d:1143ms"><title>2026-02-02: 14</title></rect>
+<rect class="cell" x="279" y="88" width="10" height="10" rx="2" fill="#26a641" style="--d:1152ms"><title>2026-02-03: 12</title></rect>
+<rect class="cell" x="279" y="101" width="10" height="10" rx="2" fill="#006d32" style="--d:1161ms"><title>2026-02-04: 6</title></rect>
+<rect class="cell hot" x="279" y="114" width="10" height="10" rx="2" fill="#39d353" style="--d:1170ms"><title>2026-02-05: 13</title></rect>
+<rect class="cell" x="279" y="127" width="10" height="10" rx="2" fill="#26a641" style="--d:1179ms"><title>2026-02-06: 9</title></rect>
+<rect class="cell" x="279" y="140" width="10" height="10" rx="2" fill="#161b22" style="--d:1188ms"><title>2026-02-07: 0</title></rect>
+<rect class="cell" x="292" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:1197ms"><title>2026-02-08: 0</title></rect>
+<rect class="cell" x="292" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:1206ms"><title>2026-02-09: 1</title></rect>
+<rect class="cell" x="292" y="88" width="10" height="10" rx="2" fill="#006d32" style="--d:1215ms"><title>2026-02-10: 5</title></rect>
+<rect class="cell hot" x="292" y="101" width="10" height="10" rx="2" fill="#39d353" style="--d:1224ms"><title>2026-02-11: 15</title></rect>
+<rect class="cell" x="292" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:1233ms"><title>2026-02-12: 5</title></rect>
+<rect class="cell hot" x="292" y="127" width="10" height="10" rx="2" fill="#39d353" style="--d:1242ms"><title>2026-02-13: 14</title></rect>
+<rect class="cell" x="292" y="140" width="10" height="10" rx="2" fill="#006d32" style="--d:1251ms"><title>2026-02-14: 5</title></rect>
+<rect class="cell" x="305" y="62" width="10" height="10" rx="2" fill="#006d32" style="--d:1260ms"><title>2026-02-15: 6</title></rect>
+<rect class="cell" x="305" y="75" width="10" height="10" rx="2" fill="#26a641" style="--d:1269ms"><title>2026-02-16: 10</title></rect>
+<rect class="cell hot" x="305" y="88" width="10" height="10" rx="2" fill="#39d353" style="--d:1278ms"><title>2026-02-17: 17</title></rect>
+<rect class="cell" x="305" y="101" width="10" height="10" rx="2" fill="#26a641" style="--d:1287ms"><title>2026-02-18: 9</title></rect>
+<rect class="cell hot" x="305" y="114" width="10" height="10" rx="2" fill="#39d353" style="--d:1296ms"><title>2026-02-19: 13</title></rect>
+<rect class="cell hot" x="305" y="127" width="10" height="10" rx="2" fill="#39d353" style="--d:1305ms"><title>2026-02-20: 13</title></rect>
+<rect class="cell" x="305" y="140" width="10" height="10" rx="2" fill="#161b22" style="--d:1314ms"><title>2026-02-21: 0</title></rect>
+<rect class="cell" x="318" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:1323ms"><title>2026-02-22: 0</title></rect>
+<rect class="cell" x="318" y="75" width="10" height="10" rx="2" fill="#161b22" style="--d:1332ms"><title>2026-02-23: 0</title></rect>
+<rect class="cell hot" x="318" y="88" width="10" height="10" rx="2" fill="#39d353" style="--d:1341ms"><title>2026-02-24: 15</title></rect>
+<rect class="cell" x="318" y="101" width="10" height="10" rx="2" fill="#161b22" style="--d:1350ms"><title>2026-02-25: 0</title></rect>
+<rect class="cell" x="318" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:1359ms"><title>2026-02-26: 6</title></rect>
+<rect class="cell hot" x="318" y="127" width="10" height="10" rx="2" fill="#39d353" style="--d:1368ms"><title>2026-02-27: 16</title></rect>
+<rect class="cell" x="318" y="140" width="10" height="10" rx="2" fill="#161b22" style="--d:1377ms"><title>2026-02-28: 0</title></rect>
+<rect class="cell" x="331" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:1386ms"><title>2026-03-01: 0</title></rect>
+<rect class="cell" x="331" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:1395ms"><title>2026-03-02: 2</title></rect>
+<rect class="cell" x="331" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:1404ms"><title>2026-03-03: 2</title></rect>
+<rect class="cell" x="331" y="101" width="10" height="10" rx="2" fill="#006d32" style="--d:1413ms"><title>2026-03-04: 6</title></rect>
+<rect class="cell" x="331" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:1422ms"><title>2026-03-05: 3</title></rect>
+<rect class="cell" x="331" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:1431ms"><title>2026-03-06: 2</title></rect>
+<rect class="cell" x="331" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:1440ms"><title>2026-03-07: 3</title></rect>
+<rect class="cell" x="344" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:1449ms"><title>2026-03-08: 0</title></rect>
+<rect class="cell" x="344" y="75" width="10" height="10" rx="2" fill="#161b22" style="--d:1458ms"><title>2026-03-09: 0</title></rect>
+<rect class="cell" x="344" y="88" width="10" height="10" rx="2" fill="#26a641" style="--d:1467ms"><title>2026-03-10: 9</title></rect>
+<rect class="cell" x="344" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:1476ms"><title>2026-03-11: 1</title></rect>
+<rect class="cell" x="344" y="114" width="10" height="10" rx="2" fill="#26a641" style="--d:1485ms"><title>2026-03-12: 11</title></rect>
+<rect class="cell" x="344" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:1494ms"><title>2026-03-13: 4</title></rect>
+<rect class="cell" x="344" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:1503ms"><title>2026-03-14: 3</title></rect>
+<rect class="cell" x="357" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:1512ms"><title>2026-03-15: 4</title></rect>
+<rect class="cell hot" x="357" y="75" width="10" height="10" rx="2" fill="#39d353" style="--d:1521ms"><title>2026-03-16: 13</title></rect>
+<rect class="cell" x="357" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:1530ms"><title>2026-03-17: 1</title></rect>
+<rect class="cell hot" x="357" y="101" width="10" height="10" rx="2" fill="#39d353" style="--d:1539ms"><title>2026-03-18: 13</title></rect>
+<rect class="cell" x="357" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:1548ms"><title>2026-03-19: 8</title></rect>
+<rect class="cell" x="357" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:1557ms"><title>2026-03-20: 2</title></rect>
+<rect class="cell" x="357" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:1566ms"><title>2026-03-21: 1</title></rect>
+<rect class="cell" x="370" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:1575ms"><title>2026-03-22: 3</title></rect>
+<rect class="cell" x="370" y="75" width="10" height="10" rx="2" fill="#006d32" style="--d:1584ms"><title>2026-03-23: 5</title></rect>
+<rect class="cell" x="370" y="88" width="10" height="10" rx="2" fill="#26a641" style="--d:1593ms"><title>2026-03-24: 9</title></rect>
+<rect class="cell" x="370" y="101" width="10" height="10" rx="2" fill="#006d32" style="--d:1602ms"><title>2026-03-25: 5</title></rect>
+<rect class="cell" x="370" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:1611ms"><title>2026-03-26: 3</title></rect>
+<rect class="cell" x="370" y="127" width="10" height="10" rx="2" fill="#161b22" style="--d:1620ms"><title>2026-03-27: 0</title></rect>
+<rect class="cell" x="370" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:1629ms"><title>2026-03-28: 2</title></rect>
+<rect class="cell" x="383" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:1638ms"><title>2026-03-29: 2</title></rect>
+<rect class="cell" x="383" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:1647ms"><title>2026-03-30: 1</title></rect>
+<rect class="cell" x="383" y="88" width="10" height="10" rx="2" fill="#006d32" style="--d:1656ms"><title>2026-03-31: 6</title></rect>
+<rect class="cell" x="383" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:1665ms"><title>2026-04-01: 4</title></rect>
+<rect class="cell" x="383" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:1674ms"><title>2026-04-02: 1</title></rect>
+<rect class="cell" x="383" y="127" width="10" height="10" rx="2" fill="#161b22" style="--d:1683ms"><title>2026-04-03: 0</title></rect>
+<rect class="cell" x="383" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:1692ms"><title>2026-04-04: 4</title></rect>
+<rect class="cell" x="396" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:1701ms"><title>2026-04-05: 2</title></rect>
+<rect class="cell" x="396" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:1710ms"><title>2026-04-06: 1</title></rect>
+<rect class="cell" x="396" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:1719ms"><title>2026-04-07: 1</title></rect>
+<rect class="cell" x="396" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:1728ms"><title>2026-04-08: 1</title></rect>
+<rect class="cell" x="396" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:1737ms"><title>2026-04-09: 2</title></rect>
+<rect class="cell" x="396" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:1746ms"><title>2026-04-10: 3</title></rect>
+<rect class="cell" x="396" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:1755ms"><title>2026-04-11: 1</title></rect>
+<rect class="cell" x="409" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:1764ms"><title>2026-04-12: 0</title></rect>
+<rect class="cell" x="409" y="75" width="10" height="10" rx="2" fill="#161b22" style="--d:1773ms"><title>2026-04-13: 0</title></rect>
+<rect class="cell" x="409" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:1782ms"><title>2026-04-14: 3</title></rect>
+<rect class="cell hot" x="409" y="101" width="10" height="10" rx="2" fill="#39d353" style="--d:1791ms"><title>2026-04-15: 15</title></rect>
+<rect class="cell" x="409" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:1800ms"><title>2026-04-16: 5</title></rect>
+<rect class="cell" x="409" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:1809ms"><title>2026-04-17: 1</title></rect>
+<rect class="cell" x="409" y="140" width="10" height="10" rx="2" fill="#161b22" style="--d:1818ms"><title>2026-04-18: 0</title></rect>
+<rect class="cell" x="422" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:1827ms"><title>2026-04-19: 1</title></rect>
+<rect class="cell" x="422" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:1836ms"><title>2026-04-20: 2</title></rect>
+<rect class="cell" x="422" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:1845ms"><title>2026-04-21: 2</title></rect>
+<rect class="cell" x="422" y="101" width="10" height="10" rx="2" fill="#26a641" style="--d:1854ms"><title>2026-04-22: 11</title></rect>
+<rect class="cell" x="422" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:1863ms"><title>2026-04-23: 1</title></rect>
+<rect class="cell hot" x="422" y="127" width="10" height="10" rx="2" fill="#39d353" style="--d:1872ms"><title>2026-04-24: 19</title></rect>
+<rect class="cell hot" x="422" y="140" width="10" height="10" rx="2" fill="#39d353" style="--d:1881ms"><title>2026-04-25: 18</title></rect>
+<rect class="cell" x="435" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:1890ms"><title>2026-04-26: 0</title></rect>
+<rect class="cell" x="435" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:1899ms"><title>2026-04-27: 1</title></rect>
+<rect class="cell" x="435" y="88" width="10" height="10" rx="2" fill="#161b22" style="--d:1908ms"><title>2026-04-28: 0</title></rect>
+<rect class="cell" x="435" y="101" width="10" height="10" rx="2" fill="#006d32" style="--d:1917ms"><title>2026-04-29: 8</title></rect>
+<rect class="cell" x="435" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:1926ms"><title>2026-04-30: 4</title></rect>
+<rect class="cell" x="435" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:1935ms"><title>2026-05-01: 1</title></rect>
+<rect class="cell" x="435" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:1944ms"><title>2026-05-02: 4</title></rect>
+<rect class="cell" x="448" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:1953ms"><title>2026-05-03: 2</title></rect>
+<rect class="cell" x="448" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:1962ms"><title>2026-05-04: 1</title></rect>
+<rect class="cell" x="448" y="88" width="10" height="10" rx="2" fill="#161b22" style="--d:1971ms"><title>2026-05-05: 0</title></rect>
+<rect class="cell" x="448" y="101" width="10" height="10" rx="2" fill="#161b22" style="--d:1980ms"><title>2026-05-06: 0</title></rect>
+<rect class="cell" x="448" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:1989ms"><title>2026-05-07: 2</title></rect>
+<rect class="cell" x="448" y="127" width="10" height="10" rx="2" fill="#161b22" style="--d:1998ms"><title>2026-05-08: 0</title></rect>
+<rect class="cell" x="448" y="140" width="10" height="10" rx="2" fill="#006d32" style="--d:2007ms"><title>2026-05-09: 5</title></rect>
+<rect class="cell" x="461" y="62" width="10" height="10" rx="2" fill="#006d32" style="--d:2016ms"><title>2026-05-10: 7</title></rect>
+<rect class="cell" x="461" y="75" width="10" height="10" rx="2" fill="#161b22" style="--d:2025ms"><title>2026-05-11: 0</title></rect>
+<rect class="cell" x="461" y="88" width="10" height="10" rx="2" fill="#006d32" style="--d:2034ms"><title>2026-05-12: 5</title></rect>
+<rect class="cell" x="461" y="101" width="10" height="10" rx="2" fill="#161b22" style="--d:2043ms"><title>2026-05-13: 0</title></rect>
+<rect class="cell" x="461" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:2052ms"><title>2026-05-14: 5</title></rect>
+<rect class="cell" x="461" y="127" width="10" height="10" rx="2" fill="#161b22" style="--d:2061ms"><title>2026-05-15: 0</title></rect>
+<rect class="cell" x="461" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:2070ms"><title>2026-05-16: 2</title></rect>
+<rect class="cell" x="474" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:2079ms"><title>2026-05-17: 1</title></rect>
+<rect class="cell" x="474" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:2088ms"><title>2026-05-18: 1</title></rect>
+<rect class="cell" x="474" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:2097ms"><title>2026-05-19: 2</title></rect>
+<rect class="cell" x="474" y="101" width="10" height="10" rx="2" fill="#161b22" style="--d:2106ms"><title>2026-05-20: 0</title></rect>
+<rect class="cell" x="474" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:2115ms"><title>2026-05-21: 1</title></rect>
+<rect class="cell" x="474" y="127" width="10" height="10" rx="2" fill="#161b22" style="--d:2124ms"><title>2026-05-22: 0</title></rect>
+<rect class="cell hot" x="474" y="140" width="10" height="10" rx="2" fill="#39d353" style="--d:2133ms"><title>2026-05-23: 29</title></rect>
+<rect class="cell" x="487" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:2142ms"><title>2026-05-24: 0</title></rect>
+<rect class="cell" x="487" y="75" width="10" height="10" rx="2" fill="#006d32" style="--d:2151ms"><title>2026-05-25: 5</title></rect>
+<rect class="cell" x="487" y="88" width="10" height="10" rx="2" fill="#006d32" style="--d:2160ms"><title>2026-05-26: 6</title></rect>
+<rect class="cell" x="487" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:2169ms"><title>2026-05-27: 3</title></rect>
+<rect class="cell" x="487" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:2178ms"><title>2026-05-28: 5</title></rect>
+<rect class="cell" x="487" y="127" width="10" height="10" rx="2" fill="#006d32" style="--d:2187ms"><title>2026-05-29: 6</title></rect>
+<rect class="cell" x="487" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:2196ms"><title>2026-05-30: 2</title></rect>
+<rect class="cell" x="500" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:2205ms"><title>2026-05-31: 3</title></rect>
+<rect class="cell" x="500" y="75" width="10" height="10" rx="2" fill="#006d32" style="--d:2214ms"><title>2026-06-01: 6</title></rect>
+<rect class="cell" x="500" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:2223ms"><title>2026-06-02: 4</title></rect>
+<rect class="cell" x="500" y="101" width="10" height="10" rx="2" fill="#26a641" style="--d:2232ms"><title>2026-06-03: 11</title></rect>
+<rect class="cell" x="500" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:2241ms"><title>2026-06-04: 8</title></rect>
+<rect class="cell" x="500" y="127" width="10" height="10" rx="2" fill="#26a641" style="--d:2250ms"><title>2026-06-05: 11</title></rect>
+<rect class="cell" x="500" y="140" width="10" height="10" rx="2" fill="#006d32" style="--d:2259ms"><title>2026-06-06: 5</title></rect>
+<rect class="cell" x="513" y="62" width="10" height="10" rx="2" fill="#006d32" style="--d:2268ms"><title>2026-06-07: 8</title></rect>
+<rect class="cell" x="513" y="75" width="10" height="10" rx="2" fill="#006d32" style="--d:2277ms"><title>2026-06-08: 5</title></rect>
+<rect class="cell" x="513" y="88" width="10" height="10" rx="2" fill="#006d32" style="--d:2286ms"><title>2026-06-09: 6</title></rect>
+<rect class="cell" x="513" y="101" width="10" height="10" rx="2" fill="#006d32" style="--d:2295ms"><title>2026-06-10: 6</title></rect>
+<rect class="cell" x="513" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:2304ms"><title>2026-06-11: 4</title></rect>
+<rect class="cell" x="513" y="127" width="10" height="10" rx="2" fill="#161b22" style="--d:2313ms"><title>2026-06-12: 0</title></rect>
+<rect class="cell" x="513" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:2322ms"><title>2026-06-13: 3</title></rect>
+<rect class="cell" x="526" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:2331ms"><title>2026-06-14: 2</title></rect>
+<rect class="cell" x="526" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:2340ms"><title>2026-06-15: 4</title></rect>
+<rect class="cell" x="526" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:2349ms"><title>2026-06-16: 2</title></rect>
+<rect class="cell" x="526" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:2358ms"><title>2026-06-17: 1</title></rect>
+<rect class="cell hot" x="526" y="114" width="10" height="10" rx="2" fill="#39d353" style="--d:2367ms"><title>2026-06-18: 19</title></rect>
+<rect class="cell" x="526" y="127" width="10" height="10" rx="2" fill="#006d32" style="--d:2376ms"><title>2026-06-19: 5</title></rect>
+<rect class="cell hot" x="526" y="140" width="10" height="10" rx="2" fill="#39d353" style="--d:2385ms"><title>2026-06-20: 18</title></rect>
+<rect class="cell" x="539" y="62" width="10" height="10" rx="2" fill="#006d32" style="--d:2394ms"><title>2026-06-21: 6</title></rect>
+<rect class="cell" x="539" y="75" width="10" height="10" rx="2" fill="#006d32" style="--d:2403ms"><title>2026-06-22: 6</title></rect>
+<rect class="cell" x="539" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:2412ms"><title>2026-06-23: 1</title></rect>
+<rect class="cell" x="539" y="101" width="10" height="10" rx="2" fill="#26a641" style="--d:2421ms"><title>2026-06-24: 10</title></rect>
+<rect class="cell" x="539" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:2430ms"><title>2026-06-25: 7</title></rect>
+<rect class="cell" x="539" y="127" width="10" height="10" rx="2" fill="#006d32" style="--d:2439ms"><title>2026-06-26: 5</title></rect>
+<rect class="cell" x="539" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:2448ms"><title>2026-06-27: 1</title></rect>
+<rect class="cell" x="552" y="62" width="10" height="10" rx="2" fill="#006d32" style="--d:2457ms"><title>2026-06-28: 6</title></rect>
+<rect class="cell" x="552" y="75" width="10" height="10" rx="2" fill="#26a641" style="--d:2466ms"><title>2026-06-29: 9</title></rect>
+<rect class="cell" x="552" y="88" width="10" height="10" rx="2" fill="#161b22" style="--d:2475ms"><title>2026-06-30: 0</title></rect>
+<rect class="cell" x="552" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:2484ms"><title>2026-07-01: 3</title></rect>
+<rect class="cell" x="552" y="114" width="10" height="10" rx="2" fill="#26a641" style="--d:2493ms"><title>2026-07-02: 11</title></rect>
+<rect class="cell" x="552" y="127" width="10" height="10" rx="2" fill="#006d32" style="--d:2502ms"><title>2026-07-03: 5</title></rect>
+<rect class="cell" x="552" y="140" width="10" height="10" rx="2" fill="#161b22" style="--d:2511ms"><title>2026-07-04: 0</title></rect>
+<rect class="cell" x="565" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:2520ms"><title>2026-07-05: 3</title></rect>
+<rect class="cell" x="565" y="75" width="10" height="10" rx="2" fill="#161b22" style="--d:2529ms"><title>2026-07-06: 0</title></rect>
+<rect class="cell" x="565" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:2538ms"><title>2026-07-07: 3</title></rect>
+<rect class="cell" x="565" y="101" width="10" height="10" rx="2" fill="#006d32" style="--d:2547ms"><title>2026-07-08: 5</title></rect>
+<rect class="cell" x="565" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:2556ms"><title>2026-07-09: 8</title></rect>
+<rect class="cell" x="565" y="127" width="10" height="10" rx="2" fill="#161b22" style="--d:2565ms"><title>2026-07-10: 0</title></rect>
+<rect class="cell" x="565" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:2574ms"><title>2026-07-11: 1</title></rect>
+<rect class="cell" x="578" y="62" width="10" height="10" rx="2" fill="#006d32" style="--d:2583ms"><title>2026-07-12: 5</title></rect>
+<rect class="cell" x="578" y="75" width="10" height="10" rx="2" fill="#006d32" style="--d:2592ms"><title>2026-07-13: 5</title></rect>
+<rect class="cell" x="578" y="88" width="10" height="10" rx="2" fill="#161b22" style="--d:2601ms"><title>2026-07-14: 0</title></rect>
+<rect class="cell" x="578" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:2610ms"><title>2026-07-15: 2</title></rect>
+<rect class="cell" x="578" y="114" width="10" height="10" rx="2" fill="#161b22" style="--d:2619ms"><title>2026-07-16: 0</title></rect>
+<rect class="cell" x="578" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:2628ms"><title>2026-07-17: 4</title></rect>
+<rect class="cell" x="578" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:2637ms"><title>2026-07-18: 1</title></rect>
+<rect class="cell" x="591" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:2646ms"><title>2026-07-19: 2</title></rect>
+<rect class="cell" x="591" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:2655ms"><title>2026-07-20: 1</title></rect>
+<rect class="cell" x="591" y="88" width="10" height="10" rx="2" fill="#006d32" style="--d:2664ms"><title>2026-07-21: 6</title></rect>
+<rect class="cell" x="591" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:2673ms"><title>2026-07-22: 3</title></rect>
+<rect class="cell" x="591" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:2682ms"><title>2026-07-23: 6</title></rect>
+<rect class="cell" x="591" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:2691ms"><title>2026-07-24: 2</title></rect>
+<rect class="cell" x="591" y="140" width="10" height="10" rx="2" fill="#161b22" style="--d:2700ms"><title>2026-07-25: 0</title></rect>
+<rect class="cell" x="604" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:2709ms"><title>2026-07-26: 3</title></rect>
+<rect class="cell" x="604" y="75" width="10" height="10" rx="2" fill="#006d32" style="--d:2718ms"><title>2026-07-27: 6</title></rect>
+<rect class="cell" x="604" y="88" width="10" height="10" rx="2" fill="#161b22" style="--d:2727ms"><title>2026-07-28: 0</title></rect>
+<rect class="cell" x="604" y="101" width="10" height="10" rx="2" fill="#26a641" style="--d:2736ms"><title>2026-07-29: 9</title></rect>
+<rect class="cell" x="604" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:2745ms"><title>2026-07-30: 6</title></rect>
+<rect class="cell" x="604" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:2754ms"><title>2026-07-31: 3</title></rect>
+<rect class="cell" x="604" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:2763ms"><title>2026-08-01: 3</title></rect>
+<rect class="cell" x="617" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:2772ms"><title>2026-08-02: 3</title></rect>
+<rect class="cell" x="617" y="75" width="10" height="10" rx="2" fill="#006d32" style="--d:2781ms"><title>2026-08-03: 7</title></rect>
+<rect class="cell" x="617" y="88" width="10" height="10" rx="2" fill="#26a641" style="--d:2790ms"><title>2026-08-04: 11</title></rect>
+<rect class="cell" x="617" y="101" width="10" height="10" rx="2" fill="#161b22" style="--d:2799ms"><title>2026-08-05: 0</title></rect>
+<rect class="cell" x="617" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:2808ms"><title>2026-08-06: 7</title></rect>
+<rect class="cell" x="617" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:2817ms"><title>2026-08-07: 3</title></rect>
+<rect class="cell" x="617" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:2826ms"><title>2026-08-08: 1</title></rect>
+<rect class="cell" x="630" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:2835ms"><title>2026-08-09: 1</title></rect>
+<rect class="cell" x="630" y="75" width="10" height="10" rx="2" fill="#26a641" style="--d:2844ms"><title>2026-08-10: 11</title></rect>
+<rect class="cell" x="630" y="88" width="10" height="10" rx="2" fill="#161b22" style="--d:2853ms"><title>2026-08-11: 0</title></rect>
+<rect class="cell" x="630" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:2862ms"><title>2026-08-12: 3</title></rect>
+<rect class="cell" x="630" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:2871ms"><title>2026-08-13: 5</title></rect>
+<rect class="cell hot" x="630" y="127" width="10" height="10" rx="2" fill="#39d353" style="--d:2880ms"><title>2026-08-14: 23</title></rect>
+<rect class="cell" x="630" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:2889ms"><title>2026-08-15: 3</title></rect>
+<rect class="cell hot" x="643" y="62" width="10" height="10" rx="2" fill="#39d353" style="--d:2898ms"><title>2026-08-16: 17</title></rect>
+<rect class="cell" x="643" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:2907ms"><title>2026-08-17: 1</title></rect>
+<rect class="cell" x="643" y="88" width="10" height="10" rx="2" fill="#161b22" style="--d:2916ms"><title>2026-08-18: 0</title></rect>
+<rect class="cell" x="643" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:2925ms"><title>2026-08-19: 3</title></rect>
+<rect class="cell" x="643" y="114" width="10" height="10" rx="2" fill="#161b22" style="--d:2934ms"><title>2026-08-20: 0</title></rect>
+<rect class="cell" x="643" y="127" width="10" height="10" rx="2" fill="#006d32" style="--d:2943ms"><title>2026-08-21: 5</title></rect>
+<rect class="cell" x="643" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:2952ms"><title>2026-08-22: 3</title></rect>
+<rect class="cell hot" x="656" y="62" width="10" height="10" rx="2" fill="#39d353" style="--d:2961ms"><title>2026-08-23: 27</title></rect>
+<rect class="cell" x="656" y="75" width="10" height="10" rx="2" fill="#006d32" style="--d:2970ms"><title>2026-08-24: 7</title></rect>
+<rect class="cell" x="656" y="88" width="10" height="10" rx="2" fill="#161b22" style="--d:2979ms"><title>2026-08-25: 0</title></rect>
+<rect class="cell" x="656" y="101" width="10" height="10" rx="2" fill="#006d32" style="--d:2988ms"><title>2026-08-26: 5</title></rect>
+<rect class="cell" x="656" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:2997ms"><title>2026-08-27: 1</title></rect>
+<rect class="cell" x="656" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:3006ms"><title>2026-08-28: 2</title></rect>
+<rect class="cell" x="656" y="140" width="10" height="10" rx="2" fill="#161b22" style="--d:3015ms"><title>2026-08-29: 0</title></rect>
+<rect class="cell" x="669" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:3024ms"><title>2026-08-30: 0</title></rect>
+<rect class="cell" x="669" y="75" width="10" height="10" rx="2" fill="#0e4429" style="--d:3033ms"><title>2026-08-31: 2</title></rect>
+<rect class="cell" x="669" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:3042ms"><title>2026-09-01: 3</title></rect>
+<rect class="cell" x="669" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:3051ms"><title>2026-09-02: 2</title></rect>
+<rect class="cell" x="669" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:3060ms"><title>2026-09-03: 4</title></rect>
+<rect class="cell" x="669" y="127" width="10" height="10" rx="2" fill="#26a641" style="--d:3069ms"><title>2026-09-04: 11</title></rect>
+<rect class="cell" x="669" y="140" width="10" height="10" rx="2" fill="#161b22" style="--d:3078ms"><title>2026-09-05: 0</title></rect>
+<rect class="cell" x="682" y="62" width="10" height="10" rx="2" fill="#0e4429" style="--d:3087ms"><title>2026-09-06: 1</title></rect>
+<rect class="cell" x="682" y="75" width="10" height="10" rx="2" fill="#161b22" style="--d:3096ms"><title>2026-09-07: 0</title></rect>
+<rect class="cell" x="682" y="88" width="10" height="10" rx="2" fill="#006d32" style="--d:3105ms"><title>2026-09-08: 5</title></rect>
+<rect class="cell" x="682" y="101" width="10" height="10" rx="2" fill="#006d32" style="--d:3114ms"><title>2026-09-09: 5</title></rect>
+<rect class="cell" x="682" y="114" width="10" height="10" rx="2" fill="#26a641" style="--d:3123ms"><title>2026-09-10: 11</title></rect>
+<rect class="cell" x="682" y="127" width="10" height="10" rx="2" fill="#161b22" style="--d:3132ms"><title>2026-09-11: 0</title></rect>
+<rect class="cell" x="682" y="140" width="10" height="10" rx="2" fill="#0e4429" style="--d:3141ms"><title>2026-09-12: 2</title></rect>
+<rect class="cell" x="695" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:3150ms"><title>2026-09-13: 0</title></rect>
+<rect class="cell" x="695" y="75" width="10" height="10" rx="2" fill="#006d32" style="--d:3159ms"><title>2026-09-14: 5</title></rect>
+<rect class="cell hot" x="695" y="88" width="10" height="10" rx="2" fill="#39d353" style="--d:3168ms"><title>2026-09-15: 15</title></rect>
+<rect class="cell" x="695" y="101" width="10" height="10" rx="2" fill="#006d32" style="--d:3177ms"><title>2026-09-16: 6</title></rect>
+<rect class="cell" x="695" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:3186ms"><title>2026-09-17: 7</title></rect>
+<rect class="cell" x="695" y="127" width="10" height="10" rx="2" fill="#161b22" style="--d:3195ms"><title>2026-09-18: 0</title></rect>
+<rect class="cell" x="695" y="140" width="10" height="10" rx="2" fill="#006d32" style="--d:3204ms"><title>2026-09-19: 5</title></rect>
+<rect class="cell" x="708" y="62" width="10" height="10" rx="2" fill="#006d32" style="--d:3213ms"><title>2026-09-20: 6</title></rect>
+<rect class="cell" x="708" y="75" width="10" height="10" rx="2" fill="#26a641" style="--d:3222ms"><title>2026-09-21: 9</title></rect>
+<rect class="cell" x="708" y="88" width="10" height="10" rx="2" fill="#006d32" style="--d:3231ms"><title>2026-09-22: 6</title></rect>
+<rect class="cell" x="708" y="101" width="10" height="10" rx="2" fill="#0e4429" style="--d:3240ms"><title>2026-09-23: 4</title></rect>
+<rect class="cell" x="708" y="114" width="10" height="10" rx="2" fill="#006d32" style="--d:3249ms"><title>2026-09-24: 8</title></rect>
+<rect class="cell" x="708" y="127" width="10" height="10" rx="2" fill="#0e4429" style="--d:3258ms"><title>2026-09-25: 1</title></rect>
+<rect class="cell" x="708" y="140" width="10" height="10" rx="2" fill="#161b22" style="--d:3267ms"><title>2026-09-26: 0</title></rect>
+<rect class="cell" x="721" y="62" width="10" height="10" rx="2" fill="#161b22" style="--d:3276ms"><title>2026-09-27: 0</title></rect>
+<rect class="cell" x="721" y="75" width="10" height="10" rx="2" fill="#26a641" style="--d:3285ms"><title>2026-09-28: 9</title></rect>
+<rect class="cell" x="721" y="88" width="10" height="10" rx="2" fill="#0e4429" style="--d:3294ms"><title>2026-09-29: 3</title></rect>
+<rect class="cell" x="721" y="101" width="10" height="10" rx="2" fill="#006d32" style="--d:3303ms"><title>2026-09-30: 6</title></rect>
+<rect class="cell" x="721" y="114" width="10" height="10" rx="2" fill="#0e4429" style="--d:3312ms"><title>2026-10-01: 1</title></rect>
+<g clip-path="url(#gridClip)"><rect class="sweep" x="-75" y="42" width="90" height="131" fill="url(#shine)"/></g>
+<linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<g class="legend"><text class="legend-t" x="584" y="183">Less</text>
+<rect x="616" y="175" width="10" height="10" rx="2" fill="#161b22"/>
+<rect x="629" y="175" width="10" height="10" rx="2" fill="#0e4429"/>
+<rect x="642" y="175" width="10" height="10" rx="2" fill="#006d32"/>
+<rect x="655" y="175" width="10" height="10" rx="2" fill="#26a641"/>
+<rect x="668" y="175" width="10" height="10" rx="2" fill="#39d353"/>
+<text class="legend-t" x="685" y="183">More</text></g>
+</svg>
