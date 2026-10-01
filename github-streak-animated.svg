@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="132" viewBox="0 0 750 132" role="img">
+<title>streak</title>
+<style>*{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}.bg{fill:#0d1117;stroke:#30363d}.num{fill:#e6edf3;font-size:30px;font-weight:700}.lab{fill:#7d8590;font-size:11px;letter-spacing:1.5px}.stat{opacity:0;animation:up .6s ease forwards}.bar{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:fill 1s ease forwards}.fire{transform-box:fill-box;transform-origin:center;animation:flick 1.6s ease-in-out infinite}@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1}}@keyframes fill{to{transform:scaleX(1)}}@keyframes flick{0%,100%{transform:scale(1)}50%{transform:scale(1.15) rotate(-3deg)}}@media (prefers-reduced-motion:reduce){.stat,.bar,.fire{animation-duration:.01ms;animation-delay:0ms}}</style>
+<rect class="bg" x="1" y="1" width="748" height="130" rx="6"/>
+<text x="60" y="34" fill="#7d8590" font-size="12">@PS-Wizard — streak</text>
+<text x="690" y="36" text-anchor="end" font-size="20" class="fire">🔥</text>
+<g class="stat" style="animation-delay:100ms"><text class="num" x="60" y="88">1387</text><text class="lab" x="60" y="108">TOTAL CONTRIBUTIONS</text></g>
+<rect x="60" y="114" width="150" height="4" rx="2" fill="#21262d"/><rect class="bar" x="60" y="114" width="138" height="4" rx="2" fill="#39d353" style="animation-delay:500ms"/>
+<g class="stat" style="animation-delay:300ms"><text class="num" x="300" y="88">4</text><text class="lab" x="300" y="108">CURRENT STREAK — DAYS</text></g>
+<rect x="300" y="114" width="150" height="4" rx="2" fill="#21262d"/><rect class="bar" x="300" y="114" width="20" height="4" rx="2" fill="#f0883e" style="animation-delay:700ms"/>
+<g class="stat" style="animation-delay:500ms"><text class="num" x="540" y="88">31</text><text class="lab" x="540" y="108">LONGEST STREAK — DAYS</text></g>
+<rect x="540" y="114" width="150" height="4" rx="2" fill="#21262d"/><rect class="bar" x="540" y="114" width="150" height="4" rx="2" fill="#26a641" style="animation-delay:900ms"/>
+</svg>

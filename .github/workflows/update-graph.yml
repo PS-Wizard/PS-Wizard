@@ -15,9 +15,9 @@ jobs:
           python-version: "3.12"
       - run: python gen_contrib.py
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           GH_USER: PS-Wizard
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: update graph
-          file_pattern: github-contrib-animated.svg
+          file_pattern: github-contrib-animated.svg github-streak-animated.svg

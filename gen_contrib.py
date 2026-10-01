@@ -89,3 +89,34 @@ p.append(f'<text class="legend-t" x="{lx+32+5*13+4}" y="{ly+8}">More</text></g>'
 p.append('</svg>')
 open(OUT, "w").write("\n".join(p))
 print(f"wrote {OUT} total={total}")
+
+# --- streak card, same style ---
+days = sorted([d for w in weeks for d in w['contributionDays']], key=lambda x: x['date'])
+cur = 0
+ds = days[:-1] if days and days[-1]['contributionCount'] == 0 else days
+for d in reversed(ds):
+    if d['contributionCount'] > 0: cur += 1
+    else: break
+longest = run = 0
+for d in days:
+    run = run + 1 if d['contributionCount'] > 0 else 0
+    longest = max(longest, run)
+OUT2 = os.path.join(os.path.dirname(__file__), 'github-streak-animated.svg')
+s = []
+s.append('<svg xmlns="http://www.w3.org/2000/svg" width="750" height="132" viewBox="0 0 750 132" role="img">')
+s.append('<title>streak</title>')
+s.append('''<style>*{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}.bg{fill:#0d1117;stroke:#30363d}.num{fill:#e6edf3;font-size:30px;font-weight:700}.lab{fill:#7d8590;font-size:11px;letter-spacing:1.5px}.stat{opacity:0;animation:up .6s ease forwards}.bar{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:fill 1s ease forwards}.fire{transform-box:fill-box;transform-origin:center;animation:flick 1.6s ease-in-out infinite}@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1}}@keyframes fill{to{transform:scaleX(1)}}@keyframes flick{0%,100%{transform:scale(1)}50%{transform:scale(1.15) rotate(-3deg)}}@media (prefers-reduced-motion:reduce){.stat,.bar,.fire{animation-duration:.01ms;animation-delay:0ms}}</style>''')
+s.append('<rect class="bg" x="1" y="1" width="748" height="130" rx="6"/>')
+s.append('<text x="60" y="34" fill="#7d8590" font-size="12">@%s — streak</text>' % USER)
+s.append('<text x="690" y="36" text-anchor="end" font-size="20" class="fire">🔥</text>')
+stats = [(str(total), 'TOTAL CONTRIBUTIONS', '#39d353', 100), (str(cur), 'CURRENT STREAK — DAYS', '#f0883e', 300), (str(longest), 'LONGEST STREAK — DAYS', '#26a641', 500)]
+xs = [60, 300, 540]
+bars = [min(total / 1500, 1.0), min(cur / 30, 1.0), min(longest / 31, 1.0)]
+for i, (n, lab, col, dl) in enumerate(stats):
+    x = xs[i]
+    s.append(f'<g class="stat" style="animation-delay:{dl}ms"><text class="num" x="{x}" y="88">{n}</text><text class="lab" x="{x}" y="108">{lab}</text></g>')
+    bw = int(150 * bars[i])
+    s.append(f'<rect x="{x}" y="114" width="150" height="4" rx="2" fill="#21262d"/><rect class="bar" x="{x}" y="114" width="{max(bw, 6)}" height="4" rx="2" fill="{col}" style="animation-delay:{dl + 400}ms"/>')
+s.append('</svg>')
+open(OUT2, 'w').write("\n".join(s))
+print(f"wrote {OUT2} cur={cur} longest={longest}")
