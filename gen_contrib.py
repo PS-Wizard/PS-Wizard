@@ -53,7 +53,7 @@ p.append('''<style>
 .d{fill:#7d8590;font-size:9px;opacity:0;animation:fadeIn .6s ease forwards}
 .cell{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .45s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:var(--d)}
 .hot{filter:brightness(1.45) drop-shadow(0 0 3px rgba(57,211,83,.8))}
-.sweep{opacity:0;animation:sweep 7s ease-in-out forwards;animation-delay:4s}
+.sweep{opacity:0;animation:sweep 7s ease-in-out infinite;animation-delay:4s}
 @keyframes pop{0%{opacity:0;transform:scale(0)}60%{opacity:1;transform:scale(1.35)}100%{opacity:1;transform:scale(1)}}
 @keyframes fadeIn{to{opacity:1}}
 @keyframes sweep{0%{opacity:0;transform:translateX(-260px) skewX(-18deg)}8%{opacity:.16}22%{opacity:.16;transform:translateX(860px) skewX(-18deg)}23%,100%{opacity:0;transform:translateX(860px) skewX(-18deg)}}
