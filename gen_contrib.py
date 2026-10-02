@@ -49,11 +49,11 @@ p.append('<title>GitHub contribution graph</title>')
 p.append('''<style>
 *{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
 .bg{fill:#0d1117;stroke:#30363d;stroke-width:1}
-.m{fill:#7d8590;font-size:10px;opacity:0;animation:fadeIn .6s ease forwards}
-.d{fill:#7d8590;font-size:9px;opacity:0;animation:fadeIn .6s ease forwards}
-.cell{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .45s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:var(--d)}
+.m{fill:#7d8590;font-size:10px;opacity:0;animation:fadeIn .3s ease forwards}
+.d{fill:#7d8590;font-size:9px;opacity:0;animation:fadeIn .3s ease forwards}
+.cell{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .3s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:var(--d)}
 .hot{filter:brightness(1.45) drop-shadow(0 0 3px rgba(57,211,83,.8))}
-.sweep{opacity:0;animation:sweep 7s ease-in-out infinite;animation-delay:4s}
+.sweep{opacity:0;animation:sweep 3s ease-in-out infinite;animation-delay:1.5s}
 @keyframes pop{0%{opacity:0;transform:scale(0)}60%{opacity:1;transform:scale(1.35)}100%{opacity:1;transform:scale(1)}}
 @keyframes fadeIn{to{opacity:1}}
 @keyframes sweep{0%{opacity:0;transform:translateX(-260px) skewX(-18deg)}8%{opacity:.16}22%{opacity:.16;transform:translateX(860px) skewX(-18deg)}23%,100%{opacity:0;transform:translateX(860px) skewX(-18deg)}}
@@ -61,16 +61,16 @@ p.append('''<style>
 </style>''')
 p.append(f'<rect class="bg" x="1" y="1" width="{W-2}" height="{H-2}" rx="6"/>')
 for wi, name in months:
-    p.append(f'<text class="m" x="{GX+wi*STEP}" y="28" style="animation-delay:{300+wi*28}ms">{name}</text>')
+    p.append(f'<text class="m" x="{GX+wi*STEP}" y="28" style="animation-delay:{100+wi*9}ms">{name}</text>')
 for row, name in {1:'Mon',3:'Wed',5:'Fri'}.items():
-    p.append(f'<text class="d" x="12" y="{GY+row*STEP+CELL-1}" style="animation-delay:{300+row*60}ms">{name}</text>')
+    p.append(f'<text class="d" x="12" y="{GY+row*STEP+CELL-1}" style="animation-delay:{100+row*20}ms">{name}</text>')
 gw, gh = len(weeks)*STEP, 7*STEP
 p.append(f'<clipPath id="gridClip"><rect x="{GX}" y="{GY}" width="{gw}" height="{gh}" rx="3"/></clipPath>')
 for wi, w in enumerate(weeks):
     for di, day in enumerate(w["contributionDays"]):
         lv = level(day["contributionCount"])
         cls = "cell hot" if lv == 4 else "cell"
-        p.append(f'<rect class="{cls}" x="{GX+wi*STEP}" y="{GY+di*STEP}" width="{CELL}" height="{CELL}" rx="2" fill="{fills[lv]}" style="--d:{(wi*7+di)*9}ms"><title>{day["date"]}: {day["contributionCount"]}</title></rect>')
+        p.append(f'<rect class="{cls}" x="{GX+wi*STEP}" y="{GY+di*STEP}" width="{CELL}" height="{CELL}" rx="2" fill="{fills[lv]}" style="--d:{(wi*7+di)*3}ms"><title>{day["date"]}: {day["contributionCount"]}</title></rect>')
 p.append(f'<g clip-path="url(#gridClip)"><rect class="sweep" x="{GX-120}" y="{GY-20}" width="90" height="{gh+40}" fill="url(#shine)"/></g>')
 p.append('<linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>')
 p.append('</svg>')
