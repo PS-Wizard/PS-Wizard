@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""One-shot: icon cloud. Best-of-seeds pack, black sticker outline, strong glow."""
 import re, os, random
 HERE = os.path.dirname(__file__)
 ICON_DIR = os.path.join(HERE, "icons-svg")
@@ -77,7 +76,7 @@ p = []
 p.append('<svg xmlns="http://www.w3.org/2000/svg" width="750" height="300" viewBox="0 0 750 300" role="img">')
 p.append('<title>stack cloud</title>')
 p.append('''<style>
-.mi{transform-box:fill-box;transform-origin:center;filter:drop-shadow(0 0 12px var(--g));opacity:0;animation:pop .5s cubic-bezier(.34,1.56,.64,1) forwards,float 4s ease-in-out infinite;animation-delay:var(--d),calc(var(--d) + 900ms)}
+.mi{transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s cubic-bezier(.34,1.56,.64,1) forwards,float 4s ease-in-out infinite;animation-delay:var(--d),calc(var(--d) + 900ms)}
 .halo{fill:#000;transform-box:fill-box;transform-origin:center;opacity:0;animation:pop .5s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:var(--d)}
 .sp{fill:#39d353;transform-box:fill-box;transform-origin:center;opacity:0;animation:tw 2.2s ease-in-out infinite;animation-delay:var(--d)}
 @keyframes pop{0%{opacity:0;transform:scale(0)}60%{opacity:1;transform:scale(1.3)}100%{opacity:1;transform:scale(1)}}
