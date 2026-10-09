@@ -398,7 +398,8 @@
 <rect class="cell" x="721" y="53" width="10" height="10" rx="2" fill="#0e4429" style="--d:1095ms"><title>2026-10-05: 1</title></rect>
 <rect class="cell" x="721" y="66" width="10" height="10" rx="2" fill="#26a641" style="--d:1098ms"><title>2026-10-06: 12</title></rect>
 <rect class="cell" x="721" y="79" width="10" height="10" rx="2" fill="#26a641" style="--d:1101ms"><title>2026-10-07: 12</title></rect>
-<rect class="cell" x="721" y="92" width="10" height="10" rx="2" fill="#161b22" style="--d:1104ms"><title>2026-10-08: 0</title></rect>
+<rect class="cell" x="721" y="92" width="10" height="10" rx="2" fill="#0e4429" style="--d:1104ms"><title>2026-10-08: 1</title></rect>
+<rect class="cell" x="721" y="105" width="10" height="10" rx="2" fill="#161b22" style="--d:1107ms"><title>2026-10-09: 0</title></rect>
 <g clip-path="url(#gridClip)"><rect class="sweep" x="-75" y="20" width="90" height="131" fill="url(#shine)"/></g>
 <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
 </svg>
